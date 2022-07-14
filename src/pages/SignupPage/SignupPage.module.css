@@ -1,0 +1,21 @@
+.add{
+    padding: 70px 0px;
+}
+
+@media screen and (max-width: 479.9px) {
+    .add{
+        background-color: #ffffff;
+    }
+}
+.section_title{
+    text-align: center;
+    margin-top: 0;
+    color:#474545;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    width: 100%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 auto 30px;
+  }

@@ -1,0 +1,19 @@
+.progress {
+  width: 280px;
+}
+
+.progress__wrap {
+  transition: width 500ms ease;
+}
+.progress__text {
+  padding: 5px;
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 480px) {
+  .progress {
+    width: 378px;
+  }
+}

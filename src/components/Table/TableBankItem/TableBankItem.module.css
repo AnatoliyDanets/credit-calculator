@@ -1,0 +1,51 @@
+.tableBank_row {
+  display: flex;
+  flex-basis: calc(100% / 7);
+}
+.tableBank__sel{
+  flex-grow: 1;
+  padding: 4px;
+  width: 100px;
+  height: 45px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tableBank__btn_icon {
+  pointer-events: none;
+  fill: var(--accent-svg-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tableBank__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: var(--additionally-bcg-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tableBank__btn_icon:hover,
+.tableBank__btn:hover
+ {
+  fill:var(--accent-svg-color);
+  background-color: var(--accent-btn-color);
+  box-shadow: 0px 1px 1px rgba(235, 232, 232, 0.12),
+    0px 4px 4px rgba(167, 166, 166, 0.06), 1px 4px 6px rgba(103, 102, 102, 0.16);
+}
+
+.tableBank__sel_btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

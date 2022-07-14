@@ -1,0 +1,29 @@
+.add {
+  padding: 70px 0px;
+  text-align: center;
+}
+
+.section_title {
+  text-align: center;
+  margin-top: 0;
+  color: var(--main-color);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  width: 100%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 auto 30px;
+}
+.table__wrapper{
+  overflow: hidden;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  max-height: 395px;
+  margin-bottom: 30px;
+}
+.table__wrapper::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

@@ -1,0 +1,77 @@
+.changeForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px 0px;
+}
+
+.changeForm__input_wrapper {
+  position: relative;
+  width: 100%;
+  left: 15px;
+  top: 0;
+  margin-bottom: 40px;
+}
+
+.changeForm__label {
+  display: flex;
+  justify-content: center;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.changeForm__input {
+  height: 34px;
+  width: calc(100% - 30px);
+  font-weight: normal;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--border-color);
+  text-indent: 20px;
+  padding: 0;
+}
+.changeForm__input:focus,
+.changeForm__select:focus {
+  border-color: var(--border-input-focus);
+  outline: none;
+}
+
+.changeForm__select {
+  text-indent: 20px;
+  border: 1px solid var(--border-color);
+  height: 34px;
+  width: calc(100% - 30px);
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.changeForm__error {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--invalid-input);
+  z-index: 1;
+}
+
+@media screen and (min-width: 480px) {
+  .changeForm {
+    padding: 0;
+  }
+  .changeForm__input_wrapper {
+    left: 30px;
+  }
+  .changeForm__input {
+    width: 409px;
+  }
+  .changeForm__select {
+    width: 409px;
+  }
+}

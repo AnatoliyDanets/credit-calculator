@@ -1,0 +1,47 @@
+.header {
+  position: relative;
+  padding: 24px 0px;
+  background-color: var(--additionally-bcg-color);
+}
+
+.header__btn {
+  background-color: transparent;
+  border: none;
+}
+
+.header__btn_icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--main-svg-color);
+  pointer-events: fill;
+}
+
+.header__btn_icon:hover {
+  fill: var(--accent-svg-color);
+}
+
+.header__btn_icon:focus {
+  fill: var(--accent-svg-color);
+}
+
+.header__mobile_btn {
+  background-color: transparent;
+  border: none;
+}
+
+.header__mobile_icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--main-svg-color);
+  pointer-events: fill;
+}
+
+.header__mobile_btn:hover,
+.header__mobile_icon:hover {
+  fill: var(--accent-svg-color);
+}
+
+.header__mobile_btn:focus,
+.header__mobile_icon:focus {
+  fill: var(--accent-svg-color);
+}

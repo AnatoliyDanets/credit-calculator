@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&family=Nunito+Sans&family=Roboto+Flex:opsz,wght@8..144,700&display=swap");
+
+:root {
+
+  /* fonts */
+  --font-family: "Nunito Sans", sans-serif;
+
+  /* background colors */
+  --main-bcg-color: #e7e7e7;
+  --additionally-bcg-color: #ffffff;
+  --primary-bcg-color: #82a0cf;
+  --secondary-bcg-color: #f5fbfb;
+
+  /* text colors */
+  --main-color: #454747;
+  --secondary-color: #f5fbfb;
+  --accent-color: #82a0cf;
+
+  /* button colors */
+  --btn-color: #82a0cf;
+  --accent-btn-color: #f5fbfb;
+  --accent-btn-border-color: #454747;
+
+  /*input  */
+  --border-input-focus: #82a0cf;
+  --invalid-input: #e12f2f;
+
+  /* svg colors */
+  --main-svg-color: #454747;
+  --accent-svg-color: #82a0cf;
+
+  /* border */
+  --border-color: #454747;
+
+}

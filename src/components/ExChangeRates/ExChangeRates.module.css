@@ -1,0 +1,112 @@
+.currency {
+  position: relative;
+  max-width: 480px;
+  height: 174px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  color: var(--secondary-color);
+  background-color: var(--primary-bcg-color);
+  background-image: url("../../image/currency/currency_mob.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.currency table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.currency thead {
+  font-size: var(--font-size__accent);
+  font-weight: bold;
+  height: 50px;
+}
+
+.currency thead td {
+  padding: 11px 0 12px;
+}
+
+.currency thead td:nth-child(1) {
+  border-top-left-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.currency thead td:nth-child(2) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.currency thead td:nth-child(3) {
+  border-top-right-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.currency td {
+  padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .currency {
+    width: 334px;
+    background-image: url("../../image/currency/currency_tab.png");
+  }
+
+  .currencyShow {
+    animation: currency-show 0.5s ease;
+  }
+}
+
+@media (min-width: 1200px) {
+  .currency {
+    width: 348px;
+    height: 247px;
+    background-image: url("../../image/currency/currency_desk.png");
+    margin-top: 0;
+  }
+
+  .currency thead {
+    height: 60px;
+  }
+
+  .currency thead td {
+    padding: 17px 0 16px;
+  }
+
+  .currency td {
+    padding-top: 23px;
+  }
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 4px solid var(--secondary-color);
+  border-left-color: transparent;
+  z-index: 50;
+  transform: translate(-50%, -50%) rotate(45deg);
+  animation: anim 1.5s linear infinite;
+}
+@keyframes anim {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.currency__item_text {
+  color: var(--secondary-color);
+}

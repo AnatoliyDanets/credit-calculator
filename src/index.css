@@ -1,0 +1,15 @@
+@import-normalize;
+@import "./stylesheets/vars.css";
+
+body {
+  margin: 0;
+  font-family:var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--main-bcg-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
