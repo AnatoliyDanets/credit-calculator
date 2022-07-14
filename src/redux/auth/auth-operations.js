@@ -2,7 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-axios.defaults.baseURL = "http://localhost:3001/api";
+axios.defaults.baseURL = "https://creds-application.herokuapp.com/api";
 
 const token = {
   set(token) {

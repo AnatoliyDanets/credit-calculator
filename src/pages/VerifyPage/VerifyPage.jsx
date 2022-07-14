@@ -4,7 +4,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import s from "./VerifyPage.module.css";
 
-axios.defaults.baseURL = "http://localhost:3001/api/";
+axios.defaults.baseURL = "https://creds-application.herokuapp.com/api/";
 
 export default function VerifyPage() {
   let { verificationToken } = useParams();
