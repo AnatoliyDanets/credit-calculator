@@ -1,7 +1,8 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import s from "./Instruction.module.css";
 
-export default function Instruction({ name, id, children, hidden }) {
+export default function Instruction({ name, id, children }) {
   const [show, setShow] = useState(false);
 
   const handleToogle = () => {
@@ -21,3 +22,9 @@ export default function Instruction({ name, id, children, hidden }) {
     </li>
   );
 }
+
+Instruction.propTypes = {
+  name: PropTypes.string,
+  id: PropTypes.string,
+  children: PropTypes.node,
+};
