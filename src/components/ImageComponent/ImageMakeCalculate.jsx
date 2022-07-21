@@ -19,7 +19,7 @@ export default function ImageMakeCalculate() {
             src="https://i.ibb.co/9Tq37rC/choose-Bank.jpg"
             alt="choose-Bank"
             border="0"
-            width="996px"
+            width="75%"
           />
         )}
       </li>
@@ -38,6 +38,7 @@ export default function ImageMakeCalculate() {
           <img
             src="https://i.ibb.co/BnbgwTd/table-Calc.jpg"
             alt="table-Calc"
+            width="75%"
             border="0"
           />
         )}
@@ -57,6 +58,7 @@ export default function ImageMakeCalculate() {
           <img
             src="https://i.ibb.co/ThW2JNq/result.jpg"
             alt="result"
+            width="427px"
             border="0"
           />
         )}

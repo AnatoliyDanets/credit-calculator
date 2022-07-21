@@ -19,9 +19,9 @@ export default function ImageCreateBank() {
           />
         ) : (
           <img
-            src="https://i.ibb.co/Sskc8K8/create-Bank.jpg"
-            alt="create-Bank"
-            width="996px"
+            src="https://i.ibb.co/ynftwPb/create-bank.jpg"
+            alt="create-bank"
+            width="347px"
             border="0"
           />
         )}
@@ -36,19 +36,12 @@ export default function ImageCreateBank() {
             border="0"
           />
         ) : (
-          <img
-            src="https://i.ibb.co/sbqKPGz/addBank.jpg"
-            alt="addBank"
-            border="0"
-            
-          />
+          <img src="https://i.ibb.co/4tv5gnq/add-bank.jpg" alt="add-bank" width="427px" border="0"/>
         )}
       </li>
     </>
   );
 }
-
-
 
 //   <img src="https://i.ibb.co/sbqKPGz/addBank.jpg" alt="addBank" border="0">
 // <img src="https://i.ibb.co/9Tq37rC/choose-Bank.jpg" alt="choose-Bank" border="0">

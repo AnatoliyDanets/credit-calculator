@@ -18,8 +18,9 @@ export default function ImageSignup() {
           />
         ) : (
           <img
-            src="https://i.ibb.co/VjgwFvP/signup.jpg"
+            src="https://i.ibb.co/yNFtmRk/signup.jpg"
             alt="signup"
+            width="427px"
             border="0"
           />
         )}
@@ -37,7 +38,7 @@ export default function ImageSignup() {
             border="0"
           />
         ) : (
-          <img src="https://i.ibb.co/qjd2Kh4/mail.jpg" alt="mail" border="0" />
+          <img src="https://i.ibb.co/qjd2Kh4/mail.jpg" width="347px" alt="mail" border="0" />
         )}
       </li>
       <li className={s.instruction__item}>
@@ -57,6 +58,7 @@ export default function ImageSignup() {
             src="https://i.ibb.co/YP7SSxn/confirm-Mail.jpg"
             alt="confirm-Mail"
             border="0"
+            width="347px"
           />
         )}
       </li>

@@ -10,11 +10,17 @@ export default function ImageLogin() {
           Enter the data that you provided during registration
         </b>
         {isMobile ? (
-          <img src="https://i.ibb.co/xhPxCfj/Login-Mobile.jpg" alt="Login-Mobile" width="280px" border="0"/>
+          <img
+            src="https://i.ibb.co/xhPxCfj/Login-Mobile.jpg"
+            alt="Login-Mobile"
+            width="280px"
+            border="0"
+          />
         ) : (
           <img
-            src="https://i.ibb.co/rHhRDhX/login.jpg"
+            src="https://i.ibb.co/BKD7p4H/login.jpg"
             alt="login"
+            width="427px"
             border="0"
           />
         )}
@@ -22,5 +28,3 @@ export default function ImageLogin() {
     </>
   );
 }
-
-
