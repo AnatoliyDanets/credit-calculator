@@ -13,6 +13,7 @@ import {
 } from "redux-persist";
 import bankReducer from './banks/reducer'
 import userReducer from './auth/auth-reducer'
+import commentsReducer from "./comments/comments-reducer";
 // import logger from "redux-logger";
 
 const banksPersistConfig = {
@@ -30,6 +31,7 @@ export const store = configureStore({
   reducer: {
     users: persistReducer(authPersistConfig, userReducer),
     banks: persistReducer(banksPersistConfig, bankReducer),
+    comments:commentsReducer,
 
   },
   middleware: (getDefaultMiddleware) =>
