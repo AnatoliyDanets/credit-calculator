@@ -97,13 +97,15 @@
 }
 .hero__link {
   padding: 10px;
-  min-width: 100px;
+  max-width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  margin: 0 auto;
   font-family: var(--font-family);
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--secondary-color);
   background-color: var(--btn-color);
   border-radius: 4px;
@@ -131,14 +133,10 @@
 @media screen and (min-width: 768px) {
   .hero__link {
     padding: 10px 15px;
-    min-width: 150px;
-    font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.87;
   }
-  .hero__link_wrapper {
-    height: 56px;
-  }
+
 }
 
 @media screen and (min-width: 1200px) {

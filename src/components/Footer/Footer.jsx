@@ -20,9 +20,9 @@ export default function Footer() {
       return;
     }
 
-    if (comment.replace(/\s/g,"") === "") {
+    if (comment.replace(/\s/g, "") === "") {
       toast.error("Empty field");
-      return
+      return;
     }
     dispatch(addComment({ comment: comment }));
     setComment("");
@@ -63,12 +63,15 @@ export default function Footer() {
               value={comment}
               onChange={(e) => setComment(e.target.value)}
               type="text"
-              placeholder="LEAVE FEEDBACK"
+              placeholder="Leave feedback..."
             />
-            <Button children={"SEND"} type={"submit"} />
+            <Button
+              children={"SEND"}
+              type={"submit"}
+              width={{ fontWeight: "600" }}
+            />
           </form>
         </div>
-
         <span className={s.footer__text}>Copyright 2022</span>
       </Container>
     </footer>

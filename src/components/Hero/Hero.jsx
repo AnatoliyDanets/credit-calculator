@@ -13,9 +13,9 @@ export default function Hero() {
           enter, you can get the result of lending. This will help you choose a
           bank whose conditions will satisfy you more.
         </p>
-        <div className={s.hero__link_wrapper}>
-          <a href="#Instruction" className={s.hero__link}>Instruction</a>
-        </div>
+        <a href="#Instruction" className={s.hero__link}>
+          Instruction
+        </a>
       </Container>
     </section>
   );
