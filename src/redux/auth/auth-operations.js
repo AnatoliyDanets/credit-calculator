@@ -2,7 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-axios.defaults.baseURL = "https://creds-application.herokuapp.com/api";
+axios.defaults.baseURL = "https://credit-calculator-backend.railway.internal/api";
 
 const token = {
   set(token) {
@@ -74,11 +74,11 @@ export const changeAvatar = createAsyncThunk(
   async (obj, { rejectWithValue }) => {
     try {
       const { data } = await axios.patch("/users/avatars", obj,
-      {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      });
+        {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+        });
       return data.avatarURL;
     } catch (err) {
       if (err.response.status === 400) {
@@ -86,7 +86,7 @@ export const changeAvatar = createAsyncThunk(
       }
       return rejectWithValue(err.response.message);
     }
-  
+
   }
 );
 

@@ -4,7 +4,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import s from "./VerifyPage.module.css";
 
-axios.defaults.baseURL = "https://creds-application.herokuapp.com/api/";
+axios.defaults.baseURL = "https://credit-calculator-backend.railway.internal/api/";
 
 export default function VerifyPage() {
   let { verificationToken } = useParams();

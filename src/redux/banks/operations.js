@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { toast } from "react-toastify";
-axios.defaults.baseURL = "https://creds-application.herokuapp.com/api";
+axios.defaults.baseURL = "https://credit-calculator-backend.railway.internal/api";
 
 export const fetchBanks = createAsyncThunk(
   "banks/fetchBanks",
