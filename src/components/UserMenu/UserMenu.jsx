@@ -29,7 +29,7 @@ export default function UserMenu({ onClick }) {
   let defaultImage =
     "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y";
   let gravatar = avatar?.includes("gravatar");
-  let newAvatar = `http://localhost:3001/${avatar}`;
+  let newAvatar = `https://credit-calculator-backend-production.up.railway.app/${avatar}`;
   const isAvatar = newAvatar.includes("undefined") ? defaultImage : newAvatar;
 
   const handleShow = () => {
