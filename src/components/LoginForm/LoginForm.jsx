@@ -111,7 +111,7 @@ export default function LoginForm() {
             onChange={handleChange}
             onBlur={handleBlur}
             placeholder="Email"
-            pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             minLength={2}
             maxLength={100}
             required
