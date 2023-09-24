@@ -52,7 +52,7 @@ export default function ExChangeRates() {
             </tr>
           </thead>
           <tbody>
-            {currency.map(({ currencyCodeA, rateBuy, rateSell }, i) => {
+            {currency.length > 0 ? currency.map(({ currencyCodeA, rateBuy, rateSell }, i) => {
               return (
                 <tr key={i}>
                   <td>{currencyCodeA === 840 ? "USD" : "EUR"}</td>
@@ -60,7 +60,7 @@ export default function ExChangeRates() {
                   <td>{Number(rateSell).toFixed(2)}</td>
                 </tr>
               );
-            })}
+            }) : <h3>No information</h3>}
           </tbody>
         </table>
       )}
