@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import axios from "axios";
 import s from "./ExChangeRates.module.css";
 
 export default function ExChangeRates() {
@@ -9,15 +10,17 @@ export default function ExChangeRates() {
   const [status, setStatus] = useState(true);
   const getExChange = async () => {
     try {
-      const res = await fetch(
-        " https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5"
+      const { data } = await axios.get("https://api.monobank.ua/bank/currency");
+      const exchange = data.filter(
+        (el) =>
+          (el.currencyCodeA === 840 && el.currencyCodeB === 980) ||
+          (el.currencyCodeA === 978 && el.currencyCodeB === 980)
       );
-      const data = await res.json();
       if (!data) {
         setStatus(true);
+        return;
       }
-      setCurrency(data);
-      setStatus(false);
+      return (setCurrency(exchange), setStatus(false));
     } catch (error) {
       setStatus(false);
       console.log(error.message);
@@ -34,7 +37,7 @@ export default function ExChangeRates() {
       return localCurrency;
     }
     // eslint-disable-next-line
-  }, []);
+  }, [currency]);
   return (
     <div className={s.currency}>
       {status ? (
@@ -49,12 +52,12 @@ export default function ExChangeRates() {
             </tr>
           </thead>
           <tbody>
-            {currency.map(({ ccy, buy, sale },i) => {
+            {currency.map(({ currencyCodeA, rateBuy, rateSell }, i) => {
               return (
                 <tr key={i}>
-                  <td>{ccy}</td>
-                  <td>{Number(buy).toFixed(2)}</td>
-                  <td>{Number(sale).toFixed(2)}</td>
+                  <td>{currencyCodeA === 840 ? "USD" : "EUR"}</td>
+                  <td>{Number(rateBuy).toFixed(2)}</td>
+                  <td>{Number(rateSell).toFixed(2)}</td>
                 </tr>
               );
             })}

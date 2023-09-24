@@ -2,7 +2,8 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-axios.defaults.baseURL = "https://credit-calculator-backend.railway.internal/api";
+axios.defaults.baseURL = "https://credit-calculator-backend-production.up.railway.app/api";
+// axios.defaults.baseURL = "http://localhost:3001/api";
 
 export const addComment = createAsyncThunk(
   "add/addComment",
