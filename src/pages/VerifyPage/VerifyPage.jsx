@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import s from "./VerifyPage.module.css";
-
-axios.defaults.baseURL = "https://credit-calculator-backend-production.up.railway.app/api/";
+// https://credit-calculator-backend.vercel.app 
+axios.defaults.baseURL = "https://credit-calculator-backend.vercel.app/api/";
 
 export default function VerifyPage() {
   let { verificationToken } = useParams();
